@@ -55,5 +55,45 @@
             app:layout_constraintTop_toTopOf="@+id/box_two_text" app:layout_constraintStart_toEndOf="@+id/box_two_text"
             android:layout_marginStart="16dp" app:layout_constraintEnd_toEndOf="parent"
             android:layout_marginEnd="16dp"/>
+    <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/label_text" android:fontFamily="@font/roboto"
+            android:textSize="24sp" app:layout_constraintStart_toStartOf="parent" android:layout_marginStart="16dp"
+            android:text="@string/how_to_play" app:layout_constraintBaseline_toBaselineOf="@+id/info_text"/>
+    <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/info_text" app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="16dp"
+            app:layout_constraintStart_toEndOf="@+id/label_text" android:layout_marginStart="16dp"
+            android:text="@string/tap_the_boxes_and_buttons" android:fontFamily="@font/roboto"
+            android:layout_marginBottom="16dp" app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginTop="16dp" app:layout_constraintTop_toBottomOf="@+id/box_two_text"
+            app:layout_constraintHorizontal_bias="0.0" app:layout_constraintVertical_bias="0.036"/>
+    <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/red_button" android:text="@string/button_red"
+            app:layout_constraintBaseline_toBaselineOf="@+id/yellow_button"
+            app:layout_constraintStart_toStartOf="parent" app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintEnd_toStartOf="@+id/yellow_button" android:layout_marginStart="16dp"/>
+    <Button
+            android:text="@string/button_yellow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/yellow_button"
+            app:layout_constraintStart_toEndOf="@+id/red_button" app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintEnd_toStartOf="@+id/green_button" android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp" android:layout_marginTop="16dp"
+            app:layout_constraintTop_toBottomOf="@+id/info_text" android:layout_marginBottom="16dp"
+            app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintVertical_bias="1.0"/>
+    <Button
+            android:text="@string/button_green"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/green_button"
+            app:layout_constraintBaseline_toBaselineOf="@+id/yellow_button"
+            app:layout_constraintStart_toEndOf="@+id/yellow_button" app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="16dp"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
